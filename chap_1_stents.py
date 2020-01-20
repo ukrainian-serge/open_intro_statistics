@@ -41,10 +41,12 @@ grouped_30.merge(grouped_365, left_index=True, right_index=True, suffixes=('_30_
 ###
 
 
-##############################
-### I THINK THIS DOES IT!! ###
-import pandas as pd
-import numpy as np
+###################################################
+###################################################
+### ONE WAY OF FORMING THE TABLE ##################
+###################################################
+
+import pandas as pd, numpy as np
 
 p_30 = pd.read_csv("./stent30.csv", header=0)
 p_365 = pd.read_csv("./stent365.csv", header=0)
@@ -53,10 +55,6 @@ p_365 = pd.read_csv("./stent365.csv", header=0)
 grouped_30 = p_30.groupby(['group', 'outcome']).agg('size').unstack()
 grouped_365 = p_365.groupby(['group', 'outcome']).agg('size').unstack()
 
-## column_titles = ['stroke', 'no event']
-## grouped_30 = grouped_30[column_titles]
-## grouped_365 = grouped_365[column_titles]
-
 concatted = pd.concat([grouped_30, grouped_365], axis=1).sort_index(ascending=False)
 ## concatted.columns.names = [None, None]
 
@@ -64,13 +62,38 @@ concatted = pd.concat([grouped_30, grouped_365], axis=1).sort_index(ascending=Fa
 columns = [('0-30_days', 'no_event'),('0-30_days', 'stroke'),('0-365_days', 'no_event'),('0-365_days', 'stroke')]
 concatted.columns = pd.MultiIndex.from_tuples(columns)
 
+###################################################
+###################################################
+### ANOTHER, SIMPLER WAY OF FORMING THE TABLE #####
+###################################################
+## Transpose over, then transpose back
+
+import pandas as pd, numpy as np
+
+
+pieces = {
+    '30':(pd.read_csv("./stent30.csv")
+            .pivot_table(index='group', columns='outcome', aggfunc=len).T),
+            
+    '365':(pd.read_csv("./stent365.csv")
+            .pivot_table(index='group', columns='outcome', aggfunc=len).T)
+    
+}
+df = pd.concat(pieces, keys=['30','365']).T
+
+
+
+
+### GREAT WAY TO SELECT MULTIINDEX STUFF ######
 ###############################################
-### ANOTHER ATTEMPT AND FORMING THE TABLE #####
 
-p_30.pivot_table(index='group', columns='outcome', aggfunc=len)
-p_365.pivot_table(index='group', columns='outcome', aggfunc=len)
+##            0-30_days         0-365_days
+##            no_event stroke   no_event stroke
+## group
+## treatment       191     33        179     45
+## control         214     13        199     28
 
 
 
-
-oncatted['0-30_days']['stroke']['control'] ### GREAT WAY TO SELECT MULTIINDEX STUFF
+## concatted['0-30_days']['stroke']['control']
+## >> 13
