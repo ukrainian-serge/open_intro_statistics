@@ -13,8 +13,8 @@ def get_funcs(thing):
 ### combine data to make like in the book
 import pandas as pd
 
-p_30 = pd.read_csv("./stent30.csv", header=0)
-p_365 = pd.read_csv("./stent365.csv", header=0)
+p_30 = pd.read_csv("./open_intro_data/stent30.csv", header=0)
+p_365 = pd.read_csv("./open_intro_data/stent365.csv", header=0)
 
 df = pd.merge(p_30, p_365, left_index=True, right_index=True)
 df.index = pd.RangeIndex(start=1, stop=452)
@@ -72,17 +72,23 @@ import pandas as pd, numpy as np
 
 
 pieces = {
-    '30':(pd.read_csv("./stent30.csv")
-            .pivot_table(index='group', columns='outcome', aggfunc=len).T),
+    '30':(pd.read_csv("./open_intro_data/stent30.csv")
+            .pivot_table(index='group', 
+            columns=['outcome'], 
+            aggfunc=len)[::-1].T[::-1]),
             
-    '365':(pd.read_csv("./stent365.csv")
-            .pivot_table(index='group', columns='outcome', aggfunc=len).T)
+    '365':(pd.read_csv("./open_intro_data/stent365.csv")
+            .pivot_table(index='group', 
+            columns=['outcome'], 
+            aggfunc=len)[::-1].T[::-1])
     
-}
-df = pd.concat(pieces, keys=['30','365']).T
+} # [::-1] * 2 to exact replicate R table in the book
 
-
-
+df = pd.concat(
+    pieces, 
+    names=['days', 'outcome'],
+    ).T
+df
 
 ### GREAT WAY TO SELECT MULTIINDEX STUFF ######
 ###############################################
@@ -95,5 +101,5 @@ df = pd.concat(pieces, keys=['30','365']).T
 
 
 
-## concatted['0-30_days']['stroke']['control']
+## concatted['30']['stroke']['control']
 ## >> 13
