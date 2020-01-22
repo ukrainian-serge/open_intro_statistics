@@ -12,7 +12,7 @@ def get_funcs(thing):
 ###################################################
 
 ### ONE WAY OF FORMING THE TABLE ##################
-import pandas as pd, numpy as np
+import pandas as pd
 
 p_30 = pd.read_csv("./stent30.csv", header=0)
 p_365 = pd.read_csv("./stent365.csv", header=0)
