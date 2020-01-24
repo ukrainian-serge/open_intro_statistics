@@ -3,4 +3,5 @@
 </p>
 <hl>
 
-<h4>The book uses R languange exclusively. This collection of notebooks are an attempt to transcribe the tables, charts, and anything else, into Python.</h4>
+
+<p>The OpenIntro Statistics book uses R languange exclusively. This collection of notebooks are an attempt to transcribe the tables, charts, etc, into Python.</p>
