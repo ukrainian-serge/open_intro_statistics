@@ -4,7 +4,8 @@
 
 ---
 
+
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ukrainian-serge/open_intro_statistics/master)
 <h4>This collection of notebooks are intended to be a follow-along with the material in the book.</h4>
 
-<p>OpenIntro Stats book is an introduction into the world of statistics using a programming language called R exclusively. This is an attempt to transcribe the tables, charts, and anything else worth a challenge, into Python. </p>
+<p>[OpenIntro Stats book](https://www.openintro.org/download.php?file=os0&referrer=/stat/textbook.php) is a free introduction into the world of statistics using a programming language called R exclusively. This is an attempt to transcribe the tables, charts, and anything else worth a challenge, into Python. </p>
