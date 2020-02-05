@@ -11,4 +11,5 @@
 
 <p><a href="https://www.openintro.org/">OpenIntro Stats</a> is a free book containing an introduction into the world of statistics using a R language exclusively. This is an attempt to transcribe the tables, charts, and anything else worth a challenge, into Python.</p>
 
-A copy of the book is contained in the repo [here](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/openintro_book/os3.pdf).
+A copy of the book is contained in the repo [here](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/assets/os3.pdf).
+
