@@ -18,3 +18,4 @@ A copy of the book is contained in the repo [here](https://github.com/ukrainian-
 
 - Python + pandas, Numpy, Matplotlib, etc.
 - Jupyter Notebook
+- Binder + Docker
