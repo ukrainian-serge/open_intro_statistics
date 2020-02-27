@@ -5,11 +5,11 @@
 ---
 
 
-Want to see how stats is done with a programming language? click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ukrainian-serge/open_intro_statistics/master) to launch a fully functioning version of these Python Jupyter Notebooks that you can play around with yourself! 
+Want to see how stats is done with a programming language? Click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ukrainian-serge/open_intro_statistics/master) to launch a fully functioning version of these Python Jupyter Notebooks that you can play around with yourself! 
 It's Easy, once Binder loads in your browser window: 
  - click `serge_notebooks` and choose a notebook (`chap_1.ipynb` or `chap_1_exercises.ipynb`, etc) 
  - wait for notebook to open and load
- - `Shift+Enter` to run the cells of
+ - `Shift+Enter` to run the cells
 
 Easy!
 
