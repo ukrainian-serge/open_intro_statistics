@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="./assets/openintro.jfif" alt="logo" width="301" height="378"/>
+    <img src="./assets/openintro.jfif" alt="logo" width="401" height="478"/>
 </p>
 
 ---
