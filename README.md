@@ -10,10 +10,9 @@ It's Easy, once Binder loads in your browser window:
  - click `serge_notebooks` and choose a notebook (`chap_1.ipynb` or `chap_1_exercises.ipynb`, etc) 
  - wait for notebook to open and load
  - `Shift+Enter` to run the cells
- - follow along with the [book](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/assets/os3.pdf) by clicking the hyperlink headers in the Jupyter, easy!
-  
+ - follow along with the [book](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/assets/os3.pdf) by clicking the hyperlink headers in the Jupyter Notebook. 
 
-
+Super easy!
 
 ---
 
