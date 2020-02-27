@@ -7,7 +7,7 @@
 
 Want to see how stats is done with a programming language? Click [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ukrainian-serge/open_intro_statistics/master) to launch a fully functioning version of these Python Jupyter Notebooks that you can play around with yourself! 
 It's Easy!   
-Once Binder loads in your browser window(it'll take a minute): 
+Once **Binder** loads in your browser window(it'll take a minute): 
  - click `serge_notebooks` and choose a notebook (`chap_1.ipynb` or `chap_1_exercises.ipynb`, etc) 
  - wait for Jupyter Notebook to open and load
  - next click `run cells` or `Shift+Enter` to run the cells and see the outputs
