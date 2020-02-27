@@ -11,7 +11,7 @@ It's Easy, once Binder loads in your browser window:
  - wait for notebook to open and load
  - `Shift+Enter` to run the cells, easy!
  - follow along with the book [book](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/assets/os3.pdf) by clicking the hyperlink headers
- - 
+  
 
 
 
