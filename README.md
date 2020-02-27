@@ -9,9 +9,10 @@ Want to see how stats is done with a programming language? Click [![Binder](http
 It's Easy, once Binder loads in your browser window: 
  - click `serge_notebooks` and choose a notebook (`chap_1.ipynb` or `chap_1_exercises.ipynb`, etc) 
  - wait for notebook to open and load
- - `Shift+Enter` to run the cells
+ - `Shift+Enter` to run the cells, easy!
+ - follow along with the book [book](https://github.com/ukrainian-serge/open_intro_statistics/blob/master/assets/os3.pdf) by clicking the hyperlink headers
+ - 
 
-Easy!
 
 
 ---
